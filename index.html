@@ -57,10 +57,11 @@
     </nav>
     <main>
       <section>
-        <h2>
+        <fieldset>
+        <legend><h2>
           Cómo saber si el <strong> <em>violoncello</em></strong> es el mejor
           instrumento para ti
-        </h2>
+        </h2></legend>
         <img
           src="/html5_arquitectura_informacion/html5_arquitectura_informacion/assets/images/cello_guitarra.png"
           width=" 200px"
@@ -75,7 +76,8 @@
         </article>
       </section>
       <section>
-        <h2>Elige el tamaño adecuado para empezar</h2>
+        <fieldset>
+        <legend><h2>Elige el tamaño adecuado para empezar</h2></legend>
         <img
           src="/html5_arquitectura_informacion/html5_arquitectura_informacion/assets/images/diferentes_cellos_tallas.webp"
           width=" 300px"
@@ -88,7 +90,66 @@
           distintos tamaños para garantizar comodidad y facilidad de movimiento.
         </article>
       </section>
+
+      <section>
+        <fieldset>
+        <legend><h2>El sonido del instrumento</h2></legend>
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/K_m2mtaW2n0?si=Pab-HGAqSIqNZino" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <article>
+          El <em>violoncello</em> real tiene un sonido cálido y resonante, rico en matices, gracias a su caja de madera. El <em>violoncello</em> eléctrico, en cambio, tiene un sonido más directo y menos resonante, ideal para efectos y estilos modernos.
+        </article>
+      </section>
+    </fieldset>
+
+      <section>
+        <fieldset>
+      <legend>
+        <h2>Un pequeño test: ¿Qué compositor es el que se oye en el audio?</h2></legend>
+       <audio id="mischa_maisky" controls src="/html5_arquitectura_informacion/html5_arquitectura_informacion/assets/audio/Mischa Maisky plays Bach Cello Suite No.1 in G (full).mp3" type="audio/mp3" ></audio><p>Elige entre estos compositores:</p> </audio>
+       <script>
+        const audio = document.getElementById("mischa_maisky");
+        audio.currentTime = 10; // Reproduce desde el segundo 10
+      </script>
+      
+        <form action="respuesta_test.htm" method="get">
+          <input type="radio" name="obra" value="Bach"> Johann Sebastian Bach
+          <input type="radio" name="obra" value="Hayden"> Franz Joseph Haydn
+          <input type="radio" name="obra" value="Beethoven"> Ludwig van Beethoven
+          <input type="submit" value="Votar" onclick="location.href='respuesta_test.html'"> 
+        </form>
+      </fieldset>
+      </section>
+
+      <section>
+        <fieldset>
+        <legend><h2>Apúntate a nuestras clases. Rellena el formulario:</h2></legend>
+        <form action="alumnos_nuevos.php" method="post">
+          <label for="nombre"> Nombre</label>
+          <input type="text" id="nombre" maxlength="40">
+          <label for="primer_apellido">Primer apellido</label> 
+          <input type="text" id="primer_apellido" maxlength="60"> 
+          <label for="segundo_apellido">Segundo apellido</label> 
+          <input type="text" maxlength="60" id="segundo_apellido">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" ide="correo"maxlength="60">
+          <label for="fecha_nacimiento">Fecha de nacimiento</label>
+          <input type="date" name="fecha_nacimiento">
+          <input type="submit" value="Enviar">
+
+
+
+
+        </form>
+
+        
+      
+      </section>
+    </fieldset>
+    
     </main>
+
+
     <footer>
       <small>
         © 2024 Elena García Verduras. Todos los derechos reservados. | Contacto:
